@@ -8,6 +8,7 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('AboutCtrl', function ($scope, Organization) {
+  .controller('AboutCtrl', function ($rootScope, $scope, Organization) {
+    $rootScope.pageTitle = 'About';
     $scope.organization = Organization.get();
   });

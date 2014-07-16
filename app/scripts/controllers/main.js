@@ -8,7 +8,8 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('MainCtrl', function ($scope, Organization, Product) {
+  .controller('MainCtrl', function ($rootScope, $scope, Organization, Product) {
+    $rootScope.pageTitle = 'Home';
     $scope.organization = Organization.get();
     $scope.products = Product.index();
   });

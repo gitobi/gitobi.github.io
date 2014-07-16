@@ -8,6 +8,8 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('ProductsShowCtrl', function ($scope, $routeParams, Product) {
-    $scope.product = Product.get($routeParams.productId);
+  .controller('ProductsShowCtrl', function ($rootScope, $scope, $routeParams, Product) {
+    var productId = $routeParams.productId;
+    $rootScope.pageTitle = productId;
+    $scope.product = Product.get(productId);
   });

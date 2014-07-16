@@ -8,7 +8,8 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('ContactCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($rootScope, $scope) {
+    $rootScope.pageTitle = 'Contact';
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
