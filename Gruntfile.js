@@ -21,11 +21,18 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  var awsConfig = {
+    key: 'AKIAJA5SZ6IQZI7BKYJA',
+    secret: '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'
+  };
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
     // Project settings
     yeoman: appConfig,
+
+    aws: awsConfig,
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -386,6 +393,27 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
+      }
+    },
+
+    // Deployment
+    s3: {
+      options: {
+        key: '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        bucket: 'www.gitobi.com',
+        access: 'public-read',
+        region: 'ap-northeast-1'
+      },
+      deploy: {
+        sync: [
+          {
+            src: '<%= yeoman.dist %>/**',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true }
+          }
+        ]
       }
     }
   });
