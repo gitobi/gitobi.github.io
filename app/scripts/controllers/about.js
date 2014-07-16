@@ -8,9 +8,6 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('AboutCtrl', function ($scope) {
-    $scope.organization = {
-      name: 'Gitobi LLC',
-      foundedAt: '2014/07/31'
-    };
+  .controller('AboutCtrl', function ($scope, Organization) {
+    $scope.organization = Organization.get();
   });
