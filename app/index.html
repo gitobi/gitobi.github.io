@@ -21,12 +21,12 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div ng-controller="HeaderCtrl" class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/products">Products</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/contact">Contact</a></li>
+          <li ng-class="{active: isActive('/')}"><a ng-href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li ng-class="{active: isActive('/products')}"><a ng-href="#/products"><span class="glyphicon glyphicon-gift"></span></a></li>
+          <li ng-class="{active: isActive('/about')}"><a ng-href="#/about"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+          <li ng-class="{active: isActive('/contact')}"><a ng-href="#/contact"><span class="glyphicon glyphicon-question-sign"></span></a></li>
         </ul>
         <h3 class="text-muted"><a ng-href="#">Gitobi</a></h3>
       </div>
@@ -34,7 +34,7 @@
       <div ng-view=""></div>
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-copyright-mark"></span> <a ng-href="#/about">Gitobi LLC</a></p>
+        <p>&copy; <a ng-href="#">Gitobi LLC</a></p>
       </div>
     </div>
 
@@ -91,6 +91,7 @@
         <script src="scripts/services/product.js"></script>
         <script src="scripts/services/organization.js"></script>
         <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/header.js"></script>
         <!-- endbuild -->
 </body>
 </html>
