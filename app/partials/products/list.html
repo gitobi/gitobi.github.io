@@ -2,7 +2,7 @@
   <h1>Products</h1>
   <div ng-repeat="product in products">
     <h2>{{product.name}}</h2>
-    <p>{{product.description}}</p>
+    <p class="lead">{{product.catchPhrase}}</p>
     <p><a class="btn btn-lg btn-success" ng-href="#/products/{{product.id}}">詳しく見る<span class="glyphicon glyphicon-ok"></span></a></p>
   </div>
 </div>

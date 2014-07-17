@@ -1,2 +1,8 @@
-<h1>{{product.id}}</h1>
-<p>{{product.description}}</p>
+<h1>{{product.name}}</h1>
+<p class="lead">{{product.catchPhrase}}</p>
+<hr />
+<div ng-repeat="description in product.descriptions">
+  <h2>{{description.title}}</h2>
+  <p class="lead">{{description.lead}}</p>
+</div>
+<p><a class="btn btn-lg btn-primary" ng-href="#/contact">お問合せはこちら<span class="glyphicon glyphicon-ok"></span></a></p>
