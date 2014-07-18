@@ -243,7 +243,6 @@ module.exports = function (grunt) {
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
       html: ['<%= yeoman.dist %>/**/*.html'],
-      css: ['<%= yeoman.dist %>/styles/**/*.css'],
       options: {
         assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images']
       }
@@ -396,6 +395,48 @@ module.exports = function (grunt) {
       }
     },
 
+    // Compress files
+    compress: {
+      options: {
+        mode: 'gzip'
+      },
+      js: {
+        files: [
+          { expand: true, cwd: '<%= yeoman.dist %>/scripts', src: '*.js', dest: '.tmp/compress/scripts' }
+        ]
+      },
+      css: {
+        files: [
+          { expand: true, cwd: '<%= yeoman.dist %>/styles', src: '*.css', dest: '.tmp/compress/styles' }
+        ]
+      },
+      html: {
+        files: [
+          { expand: true, cwd: '<%= yeoman.dist %>', src: '*.html', dest: '.tmp/compress/html' }
+        ]
+      }
+    },
+
+    rename: {
+      js: {
+        files: [
+          { src: '.tmp/compress/scripts/scripts.js', dest: '<%- yeoman.dist %>/scripts/scripts.js' },
+          { src: '.tmp/compress/scripts/vendor.js', dest: '<%- yeoman.dist %>/scripts/vendor.js' }
+        ]
+      },
+      css: {
+        files: [
+          { src: '.tmp/compress/styles/main.css', dest: '<%- yeoman.dist %>/styles/main.css' }
+        ]
+      },
+      html: {
+        files: [
+          { src: '.tmp/compress/html/index.html', dest: '<%- yeoman.dist %>/index.html' },
+          { src: '.tmp/compress/html/404.html', dest: '<%- yeoman.dist %>/404.html' }
+        ]
+      }
+    },
+
     // Deployment
     s3: {
       options: {
@@ -408,10 +449,58 @@ module.exports = function (grunt) {
       deploy: {
         sync: [
           {
-            src: '<%= yeoman.dist %>/**',
+            src: '<%= yeoman.dist %>/images/**/*',
             dest: '',
             rel: '<%= yeoman.dist %>',
             options: { verify: true }
+          },
+          {
+            src: '<%= yeoman.dist %>/partials/**/*',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true }
+          },
+          {
+            src: '<%= yeoman.dist %>/views/**/*',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true }
+          },
+          {
+            src: '<%= yeoman.dist %>/*.ico',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true }
+          },
+          {
+            src: '<%= yeoman.dist %>/*.txt',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true }
+          },
+          {
+            src: '<%= yeoman.dist %>/*.html',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true, headers: { "Expires": new Date(Date.now() + 3600).toUTCString(), "Content-Encoding": "gzip" } }
+          },
+          {
+            src: '<%= yeoman.dist %>/scripts/*.js',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString(), "Content-Encoding": "gzip" } }
+          },
+          {
+            src: '<%= yeoman.dist %>/styles/*.css',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString(), "Content-Encoding": "gzip" } }
+          },
+          {
+            src: '<%= yeoman.dist %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/**/*',
+            dest: '',
+            rel: '<%= yeoman.dist %>',
+            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString() } }
           }
         ]
       }
@@ -459,9 +548,15 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
+    'compress:js',
+    'rename:js',
+    'compress:css',
+    'rename:css',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'compress:html',
+    'rename:html'
   ]);
 
   grunt.registerTask('default', [
