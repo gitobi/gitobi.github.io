@@ -36,8 +36,12 @@ angular
         controller: 'ProductsShowCtrl'
       })
       .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        templateUrl: 'views/contact/index.html',
+        controller: 'ContactIndexCtrl'
+      })
+      .when('/contact/thanks', {
+        templateUrl: 'views/contact/thanks.html',
+        controller: 'ContactThanksCtrl'
       })
       .otherwise({
         redirectTo: '/'
