@@ -8,6 +8,6 @@
  * Controller of the jamesApp
  */
 angular.module('jamesApp')
-  .controller('ContactIndexCtrl', function ($rootScope, $scope) {
+  .controller('ContactIndexCtrl', function ($rootScope) {
     $rootScope.pageTitle = 'Contact';
   });
