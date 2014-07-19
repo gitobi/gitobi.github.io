@@ -482,25 +482,25 @@ module.exports = function (grunt) {
             src: '<%= yeoman.dist %>/*.html',
             dest: '',
             rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { "Expires": new Date(Date.now() + 3600).toUTCString(), "Content-Encoding": "gzip" } }
+            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 3600).toUTCString(), 'Content-Encoding': 'gzip' } }
           },
           {
             src: '<%= yeoman.dist %>/scripts/*.js',
             dest: '',
             rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString(), "Content-Encoding": "gzip" } }
+            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString(), 'Content-Encoding': 'gzip' } }
           },
           {
             src: '<%= yeoman.dist %>/styles/*.css',
             dest: '',
             rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString(), "Content-Encoding": "gzip" } }
+            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString(), 'Content-Encoding': 'gzip' } }
           },
           {
             src: '<%= yeoman.dist %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/**/*',
             dest: '',
             rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { "Expires": new Date(Date.now() + 63072000000).toUTCString() } }
+            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString() } }
           }
         ]
       }
