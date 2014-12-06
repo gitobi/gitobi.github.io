@@ -15,7 +15,7 @@ angular.module('jamesApp')
       name: 'Gitobi',
       leadTitle: 'Gitobiが目指す未来',
       lead: '技術と美術で便利なものを生み出し続ける',
-      foundedAt: '2014/07/31'
+      foundedAt: '2014/11/10'
     };
 
     this.get = function() {
