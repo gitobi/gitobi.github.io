@@ -11,11 +11,14 @@ angular.module('jamesApp')
   .service('Organization', function Organization() {
     // AngularJS will instantiate a singleton by calling "new" on this function
     var organization = {
-      fullName: 'Gitobi LLC',
+      fullName: 'Gitobi 合同会社',
       name: 'Gitobi',
       leadTitle: 'Gitobiが目指す未来',
       lead: '技術と美術で便利なものを生み出し続ける',
-      foundedAt: '2014/11/10'
+      foundedAt: '2014/11/10',
+      address: '東京都世田谷区三宿二丁目24番13号',
+      leaderMember: '小野寺 類',
+      capital: '5,000,000 円'
     };
 
     this.get = function() {
