@@ -21,9 +21,19 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  // Load Credentials
+  // sample credentials.json
+  //{
+  //  "aws": {
+  //    "key": "your_s3_key",
+  //    "secret": "your_s3_secret"
+  //  }
+  //}
+  var credentials = grunt.file.readJSON('credentials.json')
+
   var awsConfig = {
-    key: 'AKIAJA5SZ6IQZI7BKYJA',
-    secret: 'oJLnCZclZsKyYLhoYZitTkDzo9rXlqmWp5e/JSr9'
+    key: credentials.aws.key,
+    secret: credentials.aws.secret
   };
 
   // Define the configuration for all the tasks
