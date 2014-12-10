@@ -25,3 +25,11 @@
   <div class="col-md-6">{{organization.capital}}</div>
 </div>
 
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">目的</div>
+  <div class="col-md-6">
+    <ol>
+      <li ng-repeat="purpose in organization.purposes">{{purpose}}</li>
+    </ol>
+  </div>
+</div>

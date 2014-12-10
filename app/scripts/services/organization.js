@@ -18,7 +18,12 @@ angular.module('jamesApp')
       foundedAt: '2014/11/10',
       address: '東京都世田谷区三宿二丁目24番13号',
       leaderMember: '小野寺 類',
-      capital: '5,000,000 円'
+      capital: '5,000,000 円',
+      purposes: {
+        1: "インターネット及びモバイル端末を利用した事業の運営",
+        2: "モバイル端末の開発、製造及び販売",
+        3: "前各号に附帯または関連する一切の事業"
+      }
     };
 
     this.get = function() {
