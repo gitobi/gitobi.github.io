@@ -29,7 +29,7 @@ module.exports = function (grunt) {
   //    "secret": "your_s3_secret"
   //  }
   //}
-  var credentials = grunt.file.readJSON('credentials.json')
+  var credentials = grunt.file.readJSON('credentials.json');
 
   var awsConfig = {
     key: credentials.aws.key,
