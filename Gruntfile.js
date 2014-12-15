@@ -318,7 +318,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['*.html', 'views/**/*.html', 'partials/**/*.html'],
+          src: ['*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -357,8 +357,6 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
-            'views/**/*.html',
-            'partials/**/*.html',
             'images/**/*.{webp}',
             'fonts/*'
           ]
@@ -460,18 +458,6 @@ module.exports = function (grunt) {
         sync: [
           {
             src: '<%= yeoman.dist %>/images/**/*',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true }
-          },
-          {
-            src: '<%= yeoman.dist %>/partials/**/*',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true }
-          },
-          {
-            src: '<%= yeoman.dist %>/views/**/*',
             dest: '',
             rel: '<%= yeoman.dist %>',
             options: { verify: true }

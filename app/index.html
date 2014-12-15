@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js" ng-app="jamesApp">
+<html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title ng-bind="pageTitle + ' - Gitobi'"></title>
+    <title>Gitobi</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -21,23 +21,81 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div ng-controller="HeaderCtrl" class="header">
+
+      <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li ng-class="{active: isActive('/')}"><a ng-href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li ng-class="{active: isActive('/products')}"><a ng-href="#/products"><span class="glyphicon glyphicon-gift"></span></a></li>
-          <li ng-class="{active: isActive('/about')}"><a ng-href="#/about"><span class="glyphicon glyphicon-info-sign"></span></a></li>
-          <li ng-class="{active: isActive('/contact')}"><a ng-href="#/contact"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+          <li ><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li ><a href="#products"><span class="glyphicon glyphicon-gift"></span></a></li>
+          <li ><a href="#about"><span class="glyphicon glyphicon-info-sign"></span></a></li>
+          <li ><a href="http://goo.gl/forms/UwYGr6VurI" target="blank"><span class="glyphicon glyphicon-question-sign"></span></a></li>
         </ul>
-        <h3 class="text-muted"><a ng-href="#">Gitobi</a></h3>
+        <h3 class="text-muted"><a href="/">Gitobi</a></h3>
       </div>
 
-      <div ng-view=""></div>
+      <div class="container">
+        <div class="jumbotron">
+          <h1>Gitobiが目指す未来</h1>
+          <p class="lead">技術と美術で便利なものを生み出し続ける</p>
+        </div>
+        <div class="row products" id="products">
+          <h1>Products</h1>
+          <div>
+            <h2>Kanban-San</h2>
+            <p class="lead">大切なお客様に全く新しい旅行体験を</p>
+          </div>
+          <div>
+            <h2>Kanban Platform</h2>
+            <p class="lead">手軽にiBeaconを使った電子看板を</p>
+          </div>
+          <div>
+            <h2>Pawasupo</h2>
+            <p class="lead">パワースポット巡りの新しいアプリケーション</p>
+          </div>
+        </div>
+        <div class="row about" id="about">
+          <h1>About</h1>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">会社名</div>
+            <div class="col-md-6">Gitobi 合同会社</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">代表者</div>
+            <div class="col-md-6">小野寺 類</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">住所</div>
+            <div class="col-md-6">東京都世田谷区三宿二丁目24番13号</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">設立日</div>
+            <div class="col-md-6">2014/11/10</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">資本金</div>
+            <div class="col-md-6">5,000,000 円</div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-3">目的</div>
+            <div class="col-md-6">
+              <ol>
+                <li>インターネット及びモバイル端末を利用した事業の運営</li>
+                <li>モバイル端末の開発、製造及び販売</li>
+                <li>前各号に附帯または関連する一切の事業</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class= "row contact">
+          <h1>Contact</h1>
+          <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank">お問合せはこちらから</a></p>
+        </div>
+      </div>
 
       <div class="footer">
-        <p>&copy; <a ng-href="#">Gitobi LLC</a></p>
+        <p>&copy; <a href="/">Gitobi</a></p>
       </div>
-    </div>
 
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -52,14 +110,11 @@
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
@@ -72,27 +127,11 @@
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/products/index.js"></script>
-        <script src="scripts/controllers/products/show.js"></script>
-        <script src="scripts/directives/products/list.js"></script>
-        <script src="scripts/services/product.js"></script>
-        <script src="scripts/services/organization.js"></script>
-        <script src="scripts/controllers/contact/index.js"></script>
-        <script src="scripts/controllers/header.js"></script>
-        <script src="scripts/controllers/contact/thanks.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <!-- endbuild -->
 </body>
 </html>
