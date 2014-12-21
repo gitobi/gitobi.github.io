@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".header">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -31,6 +31,7 @@
 
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
+              <li><a href="#top">Top</a></li>
               <li><a href="#products">Products</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -42,7 +43,7 @@
     </div>
 
     <div class="main-content">
-      <div class="main-visual">
+      <div class="main-visual" id="top">
         <div class="jumbotron">
           <div class="container">
             <h1>Gitobiが目指す未来</h1>
@@ -58,6 +59,8 @@
             <p class="lead">あなただけにとっておきの情報を</p>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <h1 class="anchor" id="about">About</h1>
@@ -141,6 +144,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <h1 class="anchor" id="contact">Contact</h1>

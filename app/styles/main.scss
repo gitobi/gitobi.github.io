@@ -1,11 +1,10 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import "_variables.scss";
+
 // bower:scss
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
-
-body {
-    padding-top: 50px;
-}
 
 .navbar-brand {
     padding-top: 0;
