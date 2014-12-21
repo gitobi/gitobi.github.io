@@ -21,6 +21,11 @@ $accent-color3-transparent: rgba($accent-color3, 0.8);
 
 // Create custom bootstrap
 
+// Global styles
+$body-bg: $base-color;
+$text-color: $main-color;
+$link-color: $accent-color2;
+
 // Navigation
 $navbar-default-bg: $base-color-transparent;
 $navbar-default-border: $accent-color3-transparent;
