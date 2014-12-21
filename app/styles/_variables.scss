@@ -14,6 +14,9 @@ $accent-color3: lightgray;
 
 // Make site color variations
 $base-color-transparent: rgba($base-color, 0.8);
+$main-color-darken: darken($main-color, 5%);
+$main-color-transparent: rgba($main-color, 0.7);
+$main-color-darken-transparent: rgba($main-color-darken, 0.7);
 $sub-color-darken: darken($sub-color, 5%);
 $sub-color-transparent: rgba($sub-color, 0.6);
 $sub-color-darken-transparent: rgba($sub-color-darken, 0.7);
@@ -23,15 +26,14 @@ $accent-color3-transparent: rgba($accent-color3, 0.8);
 
 // Global styles
 $body-bg: $base-color;
-$text-color: $main-color;
 $link-color: $accent-color2;
 
 // Navigation
 $navbar-default-bg: $base-color-transparent;
-$navbar-default-border: $accent-color3-transparent;
-$navbar-default-link-color: $sub-color;
+$navbar-default-border: $sub-color;
+$navbar-default-link-color: $main-color;
 $navbar-default-link-hover-color: $base-color;
-$navbar-default-link-hover-bg: $sub-color-darken-transparent;
+$navbar-default-link-hover-bg: $main-color-darken-transparent;
 $navbar-default-link-active-color: $base-color;
-$navbar-default-link-active-bg: $sub-color-transparent;
+$navbar-default-link-active-bg: $main-color-transparent;
 
