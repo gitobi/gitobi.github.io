@@ -20,11 +20,52 @@ img.social-icon {
     height: 40px;
 }
 
-.anchor:before {
+a.top-anchor {
     display: block;
-    content: '';
     position: relative;
-    margin-top: -50px;
-    padding-top: 50px;
+    top: -150px;
     visibility: hidden;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+div.header {
+}
+
+div.main-visual {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $accent-color3;
+}
+
+div.products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $accent-color3;
+}
+
+div.members {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $accent-color3;
+}
+
+div.organization {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $accent-color3;
+}
+
+div.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+div.footer {
+    margin-top: 400px;
 }
