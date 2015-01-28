@@ -253,6 +253,7 @@ module.exports = function (grunt) {
     // Performs rewrites based on filerev and the useminPrepare configuration
     usemin: {
       html: ['<%= yeoman.dist %>/**/*.html'],
+      css: ['<%= yeoman.dist %>/styles/**/*.css'],
       options: {
         assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images']
       }
@@ -420,28 +421,31 @@ module.exports = function (grunt) {
       },
       html: {
         files: [
-          { expand: true, cwd: '<%= yeoman.dist %>', src: '*.html', dest: '.tmp/compress/html' }
+          { expand: true, cwd: '<%= yeoman.dist %>/', src: '*.html', dest: '.tmp/compress/html' }
         ]
       }
     },
 
     rename: {
-      js: {
-        files: [
-          { src: '.tmp/compress/scripts/scripts.js', dest: '<%- yeoman.dist %>/scripts/scripts.js' },
-          { src: '.tmp/compress/scripts/vendor.js', dest: '<%- yeoman.dist %>/scripts/vendor.js' }
-        ]
+      scripts: {
+        src: '.tmp/compress/scripts/scripts.*.js',
+        dest: '<%- yeoman.dist %>/scripts/'
       },
-      css: {
-        files: [
-          { src: '.tmp/compress/styles/main.css', dest: '<%- yeoman.dist %>/styles/main.css' }
-        ]
+      vendor: {
+        src: '.tmp/compress/scripts/vendor.*.js',
+        dest: '<%- yeoman.dist %>/scripts/'
       },
-      html: {
-        files: [
-          { src: '.tmp/compress/html/index.html', dest: '<%- yeoman.dist %>/index.html' },
-          { src: '.tmp/compress/html/404.html', dest: '<%- yeoman.dist %>/404.html' }
-        ]
+      main: {
+        src: '.tmp/compress/styles/main.*.css',
+        dest: '<%- yeoman.dist %>/styles/'
+      },
+      index: {
+        src: '.tmp/compress/html/index.html',
+        dest: '<%- yeoman.dist %>/'
+      },
+      error: {
+        src: '.tmp/compress/html/404.html',
+        dest: '<%- yeoman.dist %>/'
       }
     },
 
@@ -544,15 +548,17 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'compress:js',
-    'rename:js',
-    'compress:css',
-    'rename:css',
     'filerev',
     'usemin',
     'htmlmin',
+    'compress:js',
+    'compress:css',
     'compress:html',
-    'rename:html'
+    'rename:scripts',
+    'rename:vendor',
+    'rename:main',
+    'rename:index',
+    'rename:error'
   ]);
 
   grunt.registerTask('default', [
