@@ -40,7 +40,10 @@ img.social-icon {
 }
 
 div.main-visual {
-    background: url(../images/bg_1.jpg) no-repeat center center fixed;
+    background-image: url(/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -49,7 +52,10 @@ div.main-visual {
 }
 
 div.products {
-    background: url(../images/bg_2.jpg) no-repeat center center fixed;
+    background: url(/images/bg_2.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -58,7 +64,10 @@ div.products {
 }
 
 div.members {
-    background: url(../images/bg_3.jpg) no-repeat center center fixed;
+    background: url(/images/bg_3.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -67,7 +76,10 @@ div.members {
 }
 
 div.organization {
-    background: url(../images/bg_4.jpg) no-repeat center center fixed;
+    background: url(/images/bg_4.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
