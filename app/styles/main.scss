@@ -1,18 +1,37 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-@import "_variables.scss";
-
 // bower:scss
 @import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
-.navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
+html, body {
+    height: 100%;
+    color: #fff;
 }
-img.brand-logo {
-    width: 120px;
-    height: 50px;
+
+a:link, a:visited, a:hover, a:active {
+    color: #fff;
+}
+
+div.full-size {
+    min-height: 100%;
+    position: relative;
+}
+
+div.half-size {
+    min-height: 50%;
+    position: relative;
+}
+
+div.centering {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    height: 20%;
 }
 
 img.social-icon {
@@ -20,52 +39,50 @@ img.social-icon {
     height: 40px;
 }
 
-a.top-anchor {
-    display: block;
-    position: relative;
-    top: -150px;
-    visibility: hidden;
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -110px;
-    visibility: hidden;
-}
-
-div.header {
-}
-
 div.main-visual {
-    padding-top: 100px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid $sub-color;
+    background-image: url(/images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 div.products {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid $sub-color;
+    background: url(/images/bg_2.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 div.members {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid $sub-color;
+    background: url(/images/bg_3.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 div.organization {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid $sub-color;
-}
-
-div.contact {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-div.footer {
-    margin-top: 400px;
+    background: url(/images/bg_4.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
