@@ -404,105 +404,28 @@ module.exports = function (grunt) {
       }
     },
 
-    // Compress files
-    compress: {
-      options: {
-        mode: 'gzip'
-      },
-      js: {
-        files: [
-          { expand: true, cwd: '<%= yeoman.dist %>/scripts', src: '*.js', dest: '.tmp/compress/scripts' }
-        ]
-      },
-      css: {
-        files: [
-          { expand: true, cwd: '<%= yeoman.dist %>/styles', src: '*.css', dest: '.tmp/compress/styles' }
-        ]
-      },
-      html: {
-        files: [
-          { expand: true, cwd: '<%= yeoman.dist %>/', src: '*.html', dest: '.tmp/compress/html' }
-        ]
-      }
-    },
-
-    rename: {
-      scripts: {
-        src: '.tmp/compress/scripts/scripts.*.js',
-        dest: '<%- yeoman.dist %>/scripts/'
-      },
-      vendor: {
-        src: '.tmp/compress/scripts/vendor.*.js',
-        dest: '<%- yeoman.dist %>/scripts/'
-      },
-      main: {
-        src: '.tmp/compress/styles/main.*.css',
-        dest: '<%- yeoman.dist %>/styles/'
-      },
-      index: {
-        src: '.tmp/compress/html/index.html',
-        dest: '<%- yeoman.dist %>/'
-      },
-      error: {
-        src: '.tmp/compress/html/404.html',
-        dest: '<%- yeoman.dist %>/'
-      }
-    },
-
     // Deployment
     s3: {
       options: {
-        key: '<%= aws.key %>',
-        secret: '<%= aws.secret %>',
-        bucket: 'www.gitobi.com',
+        accessKeyId: '<%= aws.key %>',
+        secretAccessKey: '<%= aws.secret %>',
+        region: 'ap-northeast-1',
         access: 'public-read',
-        region: 'ap-northeast-1'
+        gzip: true
       },
-      deploy: {
-        sync: [
-          {
-            src: '<%= yeoman.dist %>/images/**/*',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true }
-          },
-          {
-            src: '<%= yeoman.dist %>/*.ico',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true }
-          },
-          {
-            src: '<%= yeoman.dist %>/*.txt',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true }
-          },
-          {
-            src: '<%= yeoman.dist %>/*.html',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 3600).toUTCString(), 'Content-Encoding': 'gzip' } }
-          },
-          {
-            src: '<%= yeoman.dist %>/scripts/*.js',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString(), 'Content-Encoding': 'gzip' } }
-          },
-          {
-            src: '<%= yeoman.dist %>/styles/*.css',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString(), 'Content-Encoding': 'gzip' } }
-          },
-          {
-            src: '<%= yeoman.dist %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/**/*',
-            dest: '',
-            rel: '<%= yeoman.dist %>',
-            options: { verify: true, headers: { 'Expires': new Date(Date.now() + 63072000000).toUTCString() } }
-          }
-        ]
+      production: {
+        options: {
+          bucket: 'www.gitobi.com',
+        },
+        cwd: '<%= yeoman.dist %>',
+        src: '**'
+      },
+      staging: {
+        options: {
+          bucket: 'www-staging.gitobi.com'
+        },
+        cwd: '<%= yeoman.dist %>',
+        src: '**'
       }
     }
   });
@@ -551,14 +474,6 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin',
-    'compress:js',
-    'compress:css',
-    'compress:html',
-    'rename:scripts',
-    'rename:vendor',
-    'rename:main',
-    'rename:index',
-    'rename:error'
   ]);
 
   grunt.registerTask('default', [
@@ -566,4 +481,24 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy', function(environment) {
+    if (environment === 'production') {
+      return grunt.task.run([
+        'clean:dist',
+        'build',
+        's3:production',
+      ]);
+    } else if (environment === 'staging') {
+      return grunt.task.run([
+        'clean:dist',
+        'build',
+        's3:staging',
+      ]);
+    } else {
+      return grunt.task.run([
+        'deploy:staging'
+      ]);
+    }
+  });
 };
