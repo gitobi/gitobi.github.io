@@ -2,11 +2,8 @@
   "name": "james",
   "version": "0.0.0",
   "dependencies": {
-    "es5-shim": "~3.1.0",
-    "jquery": "~1.11.2",
-    "bootstrap-sass-official": "~3.1.1"
+    "es5-shim": "~3.1.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "appPath": "app"
 }

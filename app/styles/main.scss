@@ -1,11 +1,19 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
 // bower:scss
-@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
     height: 100%;
+    overflow: auto;
+    font-family: "HelveticaNeue", Helvetica, Arial, "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 14px;
+    font-style: normal;
     color: #fff;
 }
 
