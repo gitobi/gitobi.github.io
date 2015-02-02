@@ -12,7 +12,7 @@ html, body {
     font-family: "HelveticaNeue", Helvetica, Arial, "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 400;
     line-height: 1.2;
-    font-size: 14px;
+    font-size: 1em;
     font-style: normal;
     color: #fff;
 }
@@ -21,76 +21,37 @@ a:link, a:visited, a:hover, a:active {
     color: #fff;
 }
 
-div.full-size {
-    min-height: 100%;
-    position: relative;
-}
-
-div.half-size {
-    min-height: 50%;
-    position: relative;
-}
-
-div.centering {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 80%;
-    height: 20%;
-}
-
 img.social-icon {
     width: 40px;
     height: 40px;
 }
 
-div.main-visual {
+.covered-background-image {
+    background-size: cover;
+}
+
+.section {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.main-visual-image {
     background-image: url(/images/bg_1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
 }
 
-div.products {
-    background: url(/images/bg_2.jpg) no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
+.products-image {
+    background-image: url(/images/bg_2.jpg);
 }
 
-div.members {
-    background: url(/images/bg_3.jpg) no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
+.members-image {
+    background-image: url(/images/bg_3.jpg);
 }
 
-div.organization {
-    background: url(/images/bg_4.jpg) no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
+.organization {
+    color: #333;
+}
+
+.contact-image {
+    background-image: url(/images/bg_4.jpg);
 }

@@ -8,6 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fullpage.js/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,113 +20,55 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="main-visual full-size">
-      <div class="centering">
+    <div id="fullpage">
+      <div class="section covered-background-image main-visual-image" id="section0">
         <h1>Gitobi Inc.</h1>
         <p class="lead">Tech and Art.</p>
       </div>
-    </div>
-
-    <div class="products full-size">
-      <div class="centering">
+      <div class="section covered-background-image products-image" id="section1">
         <h1>Products</h1>
         <h2>SphereAd</h2>
         <p class="lead">Space based advertising for apps.</p>
       </div>
-    </div>
-
-    <div class="members full-size">
-      <div class="centering">
-        <h1 class="text-center">Members</h1>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Rui Onodera <small>CEO</small></h3>
-                <p>
-                  <a href="https://github.com/deraru">
-                    <img class="social-icon" src="/images/github_logo.png" alt="Github">
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Ryo Shibayama <small>COO</small></h3>
-                <p>
-                  <a href="https://github.com/serima">
-                    <img class="social-icon" src="/images/github_logo.png" alt="Github">
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Haruumi Hirabayashi <small>CFO</small></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Masayo Ohba</small></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="thumbnail">
-              <div class="caption">
-                <h3>Takuro Onoda</h3>
-              </div>
-              <p>
-                <a href="https://github.com/TakuroOnoda">
-                  <img class="social-icon" src="/images/github_logo.png" alt="Github">
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="section covered-background-image members-image" id="section2">
+        <h1>Members</h1>
+        <h3>Rui Onodera <small>CEO</small></h3>
+        <p>
+          <a href="https://github.com/deraru">
+            <img class="social-icon" src="/images/github_logo.png" alt="Github">
+          </a>
+        </p>
+        <h3>Ryo Shibayama <small>COO</small></h3>
+        <p>
+          <a href="https://github.com/serima">
+            <img class="social-icon" src="/images/github_logo.png" alt="Github">
+          </a>
+        </p>
+        <h3>Haruumi Hirabayashi <small>CFO</small></h3>
+        <h3>Masayo Ohba</small></h3>
+        <h3>Takuro Onoda</h3>
+        <p>
+          <a href="https://github.com/TakuroOnoda">
+            <img class="social-icon" src="/images/github_logo.png" alt="Github">
+          </a>
+        </p>
       </div>
-    </div>
-
-    <div class="organization full-size">
-      <div class="centering">
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
-            <h1 class="text-center">Organization</h1>
-            <dl>
-              <dt>会社名</dt>
-              <dd>Gitobi 合同会社</dd>
-              <dt>代表者</dt>
-              <dd>小野寺 類</dd>
-              <dt>所在地</dt>
-              <dd>東京都世田谷区三宿2-24-13</dd>
-              <dt>設立日</dt>
-              <dd>2014/11/10</dd>
-              <dt>資本金</dt>
-              <dd>5,000,000円</dd>
-            </dl>
-            <p class="text-center">
-              <a href="https://github.com/gitobi">
-                <img class="social-icon" src="/images/github_logo.png" alt="Github">
-              </a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
-            <h1 class="text-center">Contact</h1>
-            <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank">お問合せはこちらから</a></p>
-          </div>
-        </div>
+      <div class="section organization" id="section3">
+        <h1>Organization</h1>
+        <p>会社名: Gitobi 合同会社</p>
+        <p>代表者: 小野寺 類</p>
+        <p>所在地: 東京都世田谷区三宿2-24-13</p>
+        <p>設立日: 2014/11/10</p>
+        <p>資本金: 5,000,000円</p>
+        <p>
+          <a href="https://github.com/gitobi">
+            <img class="social-icon" src="/images/github_logo.png" alt="Github">
+          </a>
+        </p>
+      </div>
+      <div class="section covered-background-image contact-image" id="section4">
+        <h1>Contact</h1>
+        <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank">お問合せはこちらから</a></p>
       </div>
     </div>
 
@@ -146,6 +89,10 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+    <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

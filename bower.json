@@ -2,7 +2,8 @@
   "name": "james",
   "version": "0.0.0",
   "dependencies": {
-    "es5-shim": "~3.1.0"
+    "es5-shim": "~3.1.0",
+    "fullpage.js": "~2.5.6"
   },
   "devDependencies": {},
   "appPath": "app"
