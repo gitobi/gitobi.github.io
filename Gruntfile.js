@@ -388,6 +388,15 @@ module.exports = function (grunt) {
       }
     },
 
+    // Sitemap
+    sitemap: {
+      dist: {
+        pattern: ['<%= yeoman.dist %>/**/*.html'],
+        siteRoot: '<%= yeoman.dist %>/',
+        homepage: 'http://www.gitobi.com'
+      }
+    },
+
     // Deployment
     s3: {
       options: {
@@ -470,6 +479,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'clean:dist',
         'build',
+        'sitemap',
         's3:production',
       ]);
     } else if (environment === 'staging') {
