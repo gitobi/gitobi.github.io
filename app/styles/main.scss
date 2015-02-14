@@ -52,6 +52,26 @@ img.social-icon {
     color: #333;
 }
 
+.organization dl {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.organization dt {
+    font-weight: bold;
+    margin-left: 0.5em;
+    padding-top: 5px;
+}
+
+.organization dd {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
 .contact-image {
     background-image: url(/images/bg_4.jpg);
 }
