@@ -1,6 +1,6 @@
 #James
 
-Gitobi LLC Corporate website.
+Our Corporate website project. http://www.gitobi.com
 
 ## Requirements
 
