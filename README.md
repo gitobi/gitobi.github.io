@@ -34,7 +34,7 @@ grunt deploy:production
 
 ## Contributors
 
-I will happily look at any pull requests or suggestions to improve the website for your contributions. Help share the improvements with everyone!
+We will happily look at any pull requests or suggestions to improve the website for your contributions. Help share the improvements with everyone!
 
 * [@deraru](https://github.com/deraru)
 * [@serima](https://github.com/serima)
