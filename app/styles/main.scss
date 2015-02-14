@@ -22,8 +22,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 img.social-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .covered-background-image {
@@ -46,6 +46,21 @@ img.social-icon {
 
 .members-image {
     background-image: url(/images/bg_3.jpg);
+}
+
+.member {
+    display: inline-block;
+    color: #333;
+    background-color: #fff;
+    width: 290px;
+    margin: 5px auto 0 auto;
+    padding: 5px;
+}
+
+.member h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .organization {
