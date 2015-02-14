@@ -20,9 +20,16 @@ grunt serve
 
 ## Deployment 
 
+### Staging
+
 ```
-grunt build
-grunt s3
+grunt deploy
+```
+
+### Production
+
+```
+grunt deploy:production
 ```
 
 ## Contributors
