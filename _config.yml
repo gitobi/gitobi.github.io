@@ -1,5 +1,5 @@
 destination:
-  doc
+  docs
 exclude:
   - Gemfile
   - Gemfile.lock
