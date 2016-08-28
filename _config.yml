@@ -1,3 +1,5 @@
+destination:
+  doc
 exclude:
   - Gemfile
   - Gemfile.lock

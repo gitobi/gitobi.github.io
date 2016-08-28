@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 28 Aug 2016 15:07:04 +0900</pubDate>
+    <lastBuildDate>Sun, 28 Aug 2016 15:07:04 +0900</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Dreams</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/18/project-1.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/18/project-1.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Escape</title>
+        <description>
+</description>
+        <pubDate>Thu, 17 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/17/project-2.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/17/project-2.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Golden</title>
+        <description>
+</description>
+        <pubDate>Wed, 16 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/16/project-3.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/16/project-3.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Treehouse</title>
+        <description>
+</description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/15/project-4.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/15/project-4.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Round Icons</title>
+        <description>
+</description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/15/project-6.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/15/project-6.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Startup Framework</title>
+        <description>
+</description>
+        <pubDate>Mon, 14 Jul 2014 00:00:00 +0900</pubDate>
+        <link>/web%20development/2014/07/14/project-5.html</link>
+        <guid isPermaLink="true">/web%20development/2014/07/14/project-5.html</guid>
+        
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+  </channel>
+</rss>
