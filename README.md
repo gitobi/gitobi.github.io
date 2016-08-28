@@ -4,18 +4,22 @@ Our Corporate website project. http://www.gitobi.com
 
 ## Requirements
 
-* Yeoman
-	* http://yeoman.io
-* Ruby 2.1.2
+* Ruby 2.3.1
+* Bundler 1.12.5
 
 ## Environment
 
 * using `Amazon S3`.
 
+## Set up
+
+- gem install bundler
+- bundle install --path vendor/bundle
+
 ## Serve on local
 
 ```
-grunt serve
+bundle exec jekyll serve --watch
 ```
 
 ## Deployment 

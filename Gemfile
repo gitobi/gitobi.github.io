@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-gem 'compass'
+ruby '2.3.1'
+gem 'jekyll'
