@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-gem 'compass'
+ruby RUBY_VERSION
+gem "minima"
+gem "github-pages", group: :jekyll_plugins
