@@ -13,3 +13,6 @@ theme: minima
 
 exclude:
   - vendor
+  - README.md
+  - Gemfile
+  - Gemfile.lock
