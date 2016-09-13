@@ -1,39 +1,92 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    height: 100%;
+    overflow: auto;
+    font-family: "HelveticaNeue", Helvetica, Arial, "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1em;
+    font-style: normal;
+    color: #000;
+}
 
-$spacing-unit:     30px;
+a:link, a:visited, a:hover, a:active {
+    color: #000;
+}
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+a > svg {
+    width: 30px;
+    height: 30px;
+}
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+.covered-background-image {
+    background-size: cover;
+}
 
-// Width of the content area
-$content-width:    800px;
+.section {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
-$on-palm:          600px;
-$on-laptop:        800px;
+.main-visual-image {
+    background-image: url(/images/bg_1.jpg);
+}
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+.products-image {
+    background-image: url(/images/bg_2.jpg);
+}
 
-// Import partials from the `minima` theme.
-@import "minima";
+.members-image {
+    background-image: url(/images/bg_3.jpg);
+}
+
+.member {
+    color: #333;
+    background-color: #fff;
+    width: 290px;
+    margin: 0 auto 5px auto;
+    padding: 5px;
+}
+
+.member h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.organization {
+    color: #333;
+}
+
+.organization dl {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.organization dt {
+    font-weight: bold;
+    margin-left: 0.5em;
+    padding-top: 5px;
+}
+
+.organization dd {
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-image {
+    background-image: url(/images/bg_4.jpg);
+}
