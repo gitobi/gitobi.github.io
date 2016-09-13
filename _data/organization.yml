@@ -1,0 +1,16 @@
+profile:
+  - key: 会社名
+    value: Gitobi 合同会社
+  - key: 所在地
+    value: 東京都世田谷区松原3-30-10 双葉屋ビル2階
+  - key: 設立日
+    value: 2014/11/10
+  - key: 資本金
+    value: 5,100,000円
+  - key: 代表者
+    value: 小野寺 類
+  - key: 取引銀行
+    value: 三菱東京UFJ銀行 下北沢支店
+social:
+  github:  gitobi
+  twitter: gitobi_inc

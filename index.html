@@ -3,88 +3,57 @@ layout: default
 ---
 
 <div>
+
   <div>
     <h1>Gitobi Inc.</h1>
     <p>Tech and Design.</p>
   </div>
+
   <div>
-    <h1>Products</h1>
-    <h2>Industrialized Cultivation</h2>
-    <p>Make agriculture more systematic.</p>
-    <h2>System Development</h2>
-    <p>Work as your agile development team.</p>
-    <h2>Tech Advisor</h2>
-    <p>Resolve your technical issues.</p>
+    <h1>Services</h1>
+    {% for service in site.data.services %}
+      <h2>{{ service.name }}</h2>
+      <p>{{ service.introduction }}</p>
+    {% endfor %}
   </div>
+
   <div>
     <h1>Members</h1>
-    <div>
-      <h2>Rui Onodera <small>CEO</small></h2>
+    {% for member in site.data.members %}
       <div>
-        <a href="https://github.com/deraru" target="blank" rel="nofollow">
-          {% include icon-github.svg %}
-        </a>
+        <h2>
+          {{ member.full_name }}
+          {% if member.title %} <small>{{ member.title }}</small>{% endif %}
+        </h2>
+        <div>
+          <a href="https://github.com/{{ member.social.github | default: site.data.organization.social.github }}" target="blank" rel="nofollow">
+            {% include icon-github.svg %}
+          </a>
+        </div>
       </div>
-    </div>
-    <div>
-      <h2>Ryo Shibayama <small>COO</small></h2>
-      <div>
-        <a href="https://github.com/serima" target="blank" rel="nofollow">
-          {% include icon-github.svg %}
-        </a>
-      </div>
-    </div>
-    <div>
-      <h2>Hidehiko Miyazaki</h2>
-      <div>
-        <a href="https://github.com/gitobi" target="blank" rel="nofollow">
-          {% include icon-github.svg %}
-        </a>
-      </div>
-    </div>
-    <div>
-      <h2>Masayo Ohba</h2>
-      <div>
-        <a href="https://github.com/gitobi" target="blank" rel="nofollow">
-          {% include icon-github.svg %}
-        </a>
-      </div>
-    </div>
-    <div>
-      <h2>Takuro Onoda</h2>
-      <div>
-        <a href="https://github.com/TakuroOnoda" target="blank" rel="nofollow">
-          {% include icon-github.svg %}
-        </a>
-      </div>
-    </div>
+    {% endfor %}
   </div>
+
   <div>
     <h1>Organization</h1>
     <div>
       <dl>
-        <dt>会社名</dt>
-        <dd>Gitobi 合同会社</dd>
-        <dt>所在地</dt>
-        <dd>東京都世田谷区松原3-30-10<br />双葉屋ビル2F</dd>
-        <dt>設立日</dt>
-        <dd>2014/11/10</dd>
-        <dt>資本金</dt>
-        <dd>5,100,000円</dd>
-        <dt>代表者</dt>
-        <dd>小野寺 類</dd>
-        <dt>取引銀行</dt>
-        <dd>三菱東京UFJ銀行 下北沢支店</dd>
+      {% for row in site.data.organization.profile %}
+        <dt>{{ row.key }}</dt>
+        <dd>{{ row.value }}</dd>
+      {% endfor %}
       </dl>
     </div>
     <p>
-      <a href="https://github.com/gitobi" target="blank" rel="nofollow">
+      <a href="https://github.com/{{ site.data.organization.social.github }}" target="blank" rel="nofollow">
           {% include icon-github.svg %}
       </a>
     </p>
   </div>
+
   <div>
     <h1>Contact</h1>
     <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank" rel="nofollow">お問合せはこちらから</a></p>
   </div>
+
 </div>
