@@ -12,10 +12,14 @@
       <div>
         <ul>
           <li>
-            {% include icon-github.html username=site.data.organization.social.github %}
+            <a href="https://github.com/{{ site.data.organization.social.github }}" target="blank" rel="nofollow">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
           </li>
           <li>
-            {% include icon-twitter.html username=site.data.organization.social.twitter %}
+            <a href="https://twitter.com/{{ site.data.organization.social.twitter }}" target="blank" rel="nofollow">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
           </li>
         </ul>
       </div>
