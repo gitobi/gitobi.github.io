@@ -4,12 +4,13 @@ layout: default
 
 <div>
 
-  <div>
+  <div class="jumbotron header">
     <h1>Gitobi Inc.</h1>
     <p>Tech and Design.</p>
+    <button type="button" class="btn btn-secondary">More</button>
   </div>
 
-  <div>
+  <div class="container-fluid services content-div">
     <h1>Services</h1>
     {% for service in site.data.services %}
       <h2>{{ service.name }}</h2>
@@ -17,7 +18,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <div>
+  <div class="container-fluid members content-div">
     <h1>Members</h1>
     {% for member in site.data.members %}
       <div>
@@ -34,7 +35,7 @@ layout: default
     {% endfor %}
   </div>
 
-  <div>
+  <div class="container-fluid organization content-div">
     <h1>Organization</h1>
     <div>
       <dl>
@@ -51,7 +52,7 @@ layout: default
     </p>
   </div>
 
-  <div>
+  <div class="container-fluid contact content-div">
     <h1>Contact</h1>
     <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank" rel="nofollow">お問合せはこちらから</a></p>
   </div>
