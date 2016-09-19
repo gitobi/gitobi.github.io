@@ -1,3 +1,46 @@
 ---
 ---
 @charset "utf-8";
+
+$color-primary: #f4511e;
+$color-primary-text: #ffffff;
+$color-background-primary: #ffffff;
+$color-background-secondary: #f6f6f6;
+
+header {
+  text-align: center;
+}
+
+.header {
+  background-color: $color-primary;
+  color: $color-primary-text;
+  text-align: center;
+  padding: 100px 25px;
+}
+
+.content-div {
+  padding: 60px 50px;
+}
+
+.services {
+  background-color: $color-background-primary;
+}
+
+.members {
+  background-color: $color-background-secondary;
+}
+
+.organization {
+  background-color: $color-background-primary;
+}
+
+.contact {
+  background-color: $color-background-secondary;
+}
+
+footer {
+  text-align: center;
+  li {
+    display: inline;
+  }
+}
