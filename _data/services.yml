@@ -1,6 +1,9 @@
 - name: Industrialized Cultivation
   introduction: Make agriculture more systematic.
+  icon: leaf
 - name: System Development
   introduction: Work as your agile development team.
+  icon: desktop
 - name: Tech Advisor
   introduction: Resolve your technical issues.
+  icon: wrench

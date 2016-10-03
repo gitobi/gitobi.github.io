@@ -24,10 +24,32 @@ header {
 
 .services {
   background-color: $color-background-primary;
+  h1 {
+    margin-bottom: 25px;
+  }
+  .service {
+    text-align: center;
+    i {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .members {
   background-color: $color-background-secondary;
+  h1 {
+    margin-bottom: 25px;
+  }
+  .member {
+    text-align: center;
+    i {
+      font-size: 30px;
+    }
+    a:link, a:hover, a:visited, a:active {
+      color: #333333;
+    }
+  }
 }
 
 .organization {

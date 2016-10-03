@@ -12,27 +12,34 @@ layout: default
 
   <div class="container-fluid services content-div">
     <h1>Services</h1>
-    {% for service in site.data.services %}
-      <h2>{{ service.name }}</h2>
-      <p>{{ service.introduction }}</p>
-    {% endfor %}
+    <div class="row">
+      {% for service in site.data.services %}
+        <div class="col-sm-4 service">
+          <i class="fa fa-{{service.icon}}" aria-hidden="true"></i>
+          <h2>{{ service.name }}</h2>
+          <p>{{ service.introduction }}</p>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="container-fluid members content-div">
     <h1>Members</h1>
-    {% for member in site.data.members %}
-      <div>
-        <h2>
-          {{ member.full_name }}
-          {% if member.title %} <small>{{ member.title }}</small>{% endif %}
-        </h2>
-        <div>
-          <a href="https://github.com/{{ member.social.github | default: site.data.organization.social.github }}" target="blank" rel="nofollow">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
+    <div class="row">
+      {% for member in site.data.members %}
+        <div class="col-sm-4 member">
+          <h2>
+            {{ member.full_name }}
+            {% if member.title %} <small>{{ member.title }}</small>{% endif %}
+          </h2>
+          <div>
+            <a href="https://github.com/{{ member.social.github | default: site.data.organization.social.github }}" target="blank" rel="nofollow">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 
   <div class="container-fluid organization content-div">
