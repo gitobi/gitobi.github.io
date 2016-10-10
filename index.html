@@ -4,13 +4,12 @@ layout: default
 
 <div>
 
-  <div class="jumbotron header">
-    <h1>Gitobi Inc.</h1>
-    <p>Tech and Design.</p>
-    <button type="button" class="btn btn-secondary">More</button>
+  <div class="header">
+    <img class="logo hidden-xs-down" src="images/logo.png" />
+    <img class="font" src="images/font.png" />
   </div>
 
-  <div class="container-fluid services content-div">
+  <div id="services" class="container-fluid services content-div">
     <h1>Services</h1>
     <div class="row">
       {% for service in site.data.services %}
@@ -23,7 +22,7 @@ layout: default
     </div>
   </div>
 
-  <div class="container-fluid members content-div">
+  <div id="members" class="container-fluid members content-div">
     <h1>Members</h1>
     <div class="row">
       {% for member in site.data.members %}
@@ -42,7 +41,7 @@ layout: default
     </div>
   </div>
 
-  <div class="container-fluid organization content-div">
+  <div id="organization" class="container-fluid organization content-div">
     <h1>Organization</h1>
     <div>
       <dl>
@@ -52,16 +51,11 @@ layout: default
       {% endfor %}
       </dl>
     </div>
-    <p>
-      <a href="https://github.com/{{ site.data.organization.social.github }}" target="blank" rel="nofollow">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-    </p>
   </div>
 
-  <div class="container-fluid contact content-div">
+  <div id="contact" class="container-fluid contact content-div">
     <h1>Contact</h1>
-    <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank" rel="nofollow">お問合せはこちらから</a></p>
+    <p><a href="http://goo.gl/forms/UwYGr6VurI" target="blank" rel="nofollow"><strong>お問合せはこちらから</strong></a></p>
   </div>
 
 </div>
