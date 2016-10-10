@@ -2,20 +2,80 @@
 ---
 @charset "utf-8";
 
-$color-primary: #f4511e;
+//0097cc
+//22dce8
+//da5d1a
+//d38634
+$color-font: #3a3a3a;
+$color-primary: #0097cc;
 $color-primary-text: #ffffff;
+$color-secondary: #22dce8;
+$color-accent-1: #da5d1a;
+$color-accent-2: #d38634;
+
 $color-background-primary: #ffffff;
-$color-background-secondary: #f6f6f6;
+$color-background-secondary: #fafafa;
+
+body {
+  color: $color-font;
+}
 
 header {
-  text-align: center;
+  .navbar {
+    padding: 0;
+    color: $color-primary-text;
+    background-color: $color-primary;
+  }
+  .navbar-brand {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 30px;
+    color: $color-primary-text;
+  }
+  button {
+    height: 50px;
+    color: $color-primary-text;
+  }
+  .nav-item {
+    height: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 0 !important;
+    .nav-link {
+      line-height: 50px;
+      padding: 0 10px;
+    }
+    a:hover, .active {
+      color: $color-primary;
+      background-color: $color-primary-text;
+    }
+    a {
+      color: $color-primary-text;
+    }
+  }
+}
+
+// workaround
+// https://github.com/twbs/bootstrap/issues/17250#issuecomment-213880999
+@media (max-width: 543px) {
+  #collapsenav {
+    clear: both;
+  }
 }
 
 .header {
-  background-color: $color-primary;
-  color: $color-primary-text;
+  background-color: $color-background-primary;
   text-align: center;
-  padding: 100px 25px;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  .logo {
+    height: 120px;
+  }
+  .font {
+    width: 300px;
+  }
 }
 
 .content-div {
@@ -23,46 +83,77 @@ header {
 }
 
 .services {
-  background-color: $color-background-primary;
+  background-color: $color-background-secondary;
   h1 {
     margin-bottom: 25px;
+    border-left: solid 8px $color-accent-2;
+    padding-left: 10px;
   }
   .service {
     text-align: center;
     i {
       font-size: 50px;
       margin-bottom: 15px;
+      color: $color-accent-1;
     }
   }
 }
 
 .members {
-  background-color: $color-background-secondary;
+  background-color: $color-background-primary;
   h1 {
     margin-bottom: 25px;
+    border-left: solid 8px $color-accent-2;
+    padding-left: 10px;
   }
   .member {
     text-align: center;
-    i {
+    margin-bottom: 15px;
+    a {
       font-size: 30px;
     }
     a:link, a:hover, a:visited, a:active {
-      color: #333333;
+      color: $color-font;
     }
   }
 }
 
 .organization {
-  background-color: $color-background-primary;
+  background-color: $color-background-secondary;
+  h1 {
+    margin-bottom: 25px;
+    border-left: solid 8px $color-accent-2;
+    padding-left: 10px;
+  }
 }
 
 .contact {
-  background-color: $color-background-secondary;
+  background-color: $color-background-primary;
+  h1 {
+    margin-bottom: 25px;
+    border-left: solid 8px $color-accent-2;
+    padding-left: 10px;
+  }
+  a:link, a:hover, a:visited, a:active {
+    color: $color-secondary;
+    text-decoration: none;
+  }
 }
 
 footer {
+  padding-top: 25px;
+  padding-bottom:25px;
   text-align: center;
-  li {
-    display: inline;
+  ul {
+    padding-left: 0px;
+    li {
+      display: inline;
+      a {
+        font-size: 30px;
+      }
+      a:link, a:hover, a:visited, a:active {
+        color: $color-font;
+      }
+    }
   }
 }
