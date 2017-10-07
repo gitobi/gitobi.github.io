@@ -4,8 +4,8 @@ Our Corporate website project. http://www.gitobi.com
 
 ## Requirements
 
-- Ruby 2.3.1
-- Bundler 1.12.5
+- Ruby 2.4.2
+- Bundler 1.15.4
 
 ## Set up
 
