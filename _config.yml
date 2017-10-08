@@ -1,6 +1,6 @@
-title: Gitobi
+title: Gitobi合同会社
 description: > # this means to ignore newlines until "baseurl:"
-  モノの情報を見れるようにするためのツールを提供しています。
+  AIとIoTが支援するフルーツ工場事業を行っています。環境を計測し、環境を制御するIoTデバイスである「Gitobi Cosmo Devices」の開発と販売、農業用AI栽培システムである「からくりファーム」の提供をGitobi合同会社は行っています。
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.gitobi.com" # the base hostname & protocol for your site
