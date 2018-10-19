@@ -7,7 +7,6 @@ url: "http://www.gitobi.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 exclude:
   - vendor
