@@ -2,13 +2,10 @@
 ---
 @charset "utf-8";
 
-//0097cc
-//22dce8
-//da5d1a
-//d38634
 $color-font: #3a3a3a;
+
 $color-primary: #0097cc;
-$color-primary-text: #ffffff;
+$color-primary-invert: #ffffff;
 $color-secondary: #22dce8;
 $color-accent-1: #da5d1a;
 $color-accent-2: #d38634;
@@ -23,20 +20,23 @@ body {
 header {
   .navbar {
     padding: 0;
-    color: $color-primary-text;
-    background-color: $color-primary;
+    background-color: $color-background-primary;
+    border-bottom: 1px solid $color-font;
   }
   .navbar-brand {
-    height: 50px;
-    line-height: 50px;
-    padding: 0 15px;
     margin: 0;
-    font-size: 30px;
-    color: $color-primary-text;
+    padding: 5px 0;
+    font-size: 0;
+  }
+  .navbar-brand .img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 40px;
+    letter-spacing: normal;
   }
   button {
     height: 50px;
-    color: $color-primary-text;
   }
   .nav-item {
     height: 50px;
@@ -48,11 +48,10 @@ header {
       padding: 0 10px;
     }
     a:hover, .active {
-      color: $color-primary;
-      background-color: $color-primary-text;
+      color: $color-font;
     }
     a {
-      color: $color-primary-text;
+      color: $color-font;
     }
   }
 }
