@@ -37,29 +37,17 @@ header {
   button {
     height: 50px;
   }
-  .nav-item {
-    height: 50px;
+  .nav-link {
     font-size: 16px;
     letter-spacing: 1px;
-    margin-left: 0 !important;
-    .nav-link {
-      line-height: 50px;
-      padding: 0 10px;
-    }
-    a:hover, .active {
-      color: $color-font;
-    }
-    a {
-      color: $color-font;
-    }
+    line-height: 50px;
+    padding: 0 10px;
   }
-}
-
-// workaround
-// https://github.com/twbs/bootstrap/issues/17250#issuecomment-213880999
-@media (max-width: 543px) {
-  #collapsenav {
-    clear: both;
+  a:hover, .active {
+    color: $color-font;
+  }
+  a {
+    color: $color-font;
   }
 }
 
