@@ -21,7 +21,6 @@ header {
   .navbar {
     padding: 0;
     background-color: $color-background-primary;
-    border-bottom: 1px solid $color-font;
   }
   .navbar-brand {
     margin: 0;
@@ -64,16 +63,26 @@ header {
   }
 }
 
-.header {
-  background-color: $color-background-primary;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 150px;
-  .logo {
-    height: 120px;
+.eyecatch {
+  .eyecatch-img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 85% 20%;
   }
-  .font {
-    width: 300px;
+  .eyecatch-phrase {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    background-color: white;
+    opacity: .75;
+    padding: 10px;
+    p {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
