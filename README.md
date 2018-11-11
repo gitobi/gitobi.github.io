@@ -2,6 +2,14 @@
 
 Our Corporate website project. http://www.gitobi.com
 
+# Posts
+
+## Overview
+
+- Permalink format is set in `_config.yml`
+
+# Development
+
 ## Requirements
 
 - Ruby 2.4.2
@@ -18,7 +26,7 @@ Our Corporate website project. http://www.gitobi.com
 bundle exec jekyll serve --watch
 ```
 
-## Contributors
+# Contributors
 
 We will happily look at any pull requests or suggestions to improve the website for your contributions. Help share the improvements with everyone!
 

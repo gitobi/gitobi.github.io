@@ -8,6 +8,8 @@ url: "http://www.gitobi.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+permalink: /:categories/:year/:month/:day/:title/
+
 exclude:
   - vendor
   - README.md
