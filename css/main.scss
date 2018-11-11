@@ -76,7 +76,26 @@ header {
   }
 
   .about {
-    margin-top: 50px;
+    margin: 50px 0 60px 0;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .eyecatch-img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    .about-description {
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  .service {
+    margin: 50px 0 60px 0;
 
     h1 {
       text-align: center;
@@ -97,25 +116,6 @@ header {
 
 .content-div {
   padding: 60px 50px;
-}
-
-.members {
-  background-color: $color-background-primary;
-  h1 {
-    margin-bottom: 25px;
-    border-left: solid 8px $color-accent-2;
-    padding-left: 10px;
-  }
-  .member {
-    text-align: center;
-    margin-bottom: 15px;
-    a {
-      font-size: 30px;
-    }
-    a:link, a:hover, a:visited, a:active {
-      color: $color-font;
-    }
-  }
 }
 
 .organization {

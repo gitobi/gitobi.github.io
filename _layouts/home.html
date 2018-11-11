@@ -32,23 +32,23 @@ layout: default
         </div>
     </div>
 
-    <div id="members" class="container-fluid members content-div">
-    <h1>Members</h1>
-    <div class="row">
-        {% for member in site.data.members %}
-        <div class="col-sm-4 member">
-            <h2>
-            {{ member.full_name }}
-            {% if member.title %} <small>{{ member.title }}</small>{% endif %}
-            </h2>
-            <div>
-            <a href="https://github.com/{{ member.social.github | default: site.data.organization.social.github }}" target="blank" rel="nofollow">
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
+    <div class="service">
+        <div class="container-fluid">
+            <h1>SERVICE</h1>
+            <div class="row">
+                <div class="col-md-6 order-md-last">
+                    <img class="eyecatch-img rounded" src="images/pages/top/service_eyecatch.jpg" />
+                </div>
+                <div class="col-md-6 order-md-first align-self-center">
+                    <div class="col-sm-12 about-description">
+                        <p>日本のフルーツ栽培のコストを下げ、効率化を支援する「フルーツ工場」事業を展開。日当たりや水分量などの環境を計測・制御するIoTデバイス「Gitobi Cosmo Devices」の開発と販売、それらのデバイスを使ったオンライン栽培管理システム「からくりファーム」の提供を行っています。</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a href="#" class="btn btn-outline-dark btn-block" role="button">Serviceを見る→</a>
+                    </div>
+                </div>
             </div>
         </div>
-        {% endfor %}
-    </div>
     </div>
 
     <div id="organization" class="container-fluid organization content-div">
