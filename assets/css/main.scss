@@ -65,7 +65,7 @@ header {
       left: 20px;
       font-size: 24px;
       line-height: 24px;
-      background-color: white;
+      background-color: $color-background-primary;
       opacity: .75;
       padding: 10px;
       p {
@@ -114,12 +114,7 @@ header {
   }
 }
 
-.content-div {
-  padding: 60px 50px;
-}
-
 .organization {
-  background-color: $color-background-secondary;
   h1 {
     margin-bottom: 25px;
     border-left: solid 8px $color-accent-2;
@@ -128,7 +123,6 @@ header {
 }
 
 .contact {
-  background-color: $color-background-primary;
   h1 {
     margin-bottom: 25px;
     border-left: solid 8px $color-accent-2;
