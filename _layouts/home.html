@@ -40,7 +40,7 @@ layout: default
                     <img class="eyecatch-img rounded" src="/assets/images/pages/top/service_eyecatch.jpg" />
                 </div>
                 <div class="col-md-6 order-md-first align-self-center">
-                    <div class="col-sm-12 about-description">
+                    <div class="col-sm-12 service-description">
                         <p>日本のフルーツ栽培のコストを下げ、効率化を支援する「フルーツ工場」事業を展開。日当たりや水分量などの環境を計測・制御するIoTデバイス「Gitobi Cosmo Devices」の開発と販売、それらのデバイスを使ったオンライン栽培管理システム「からくりファーム」の提供を行っています。</p>
                     </div>
                     <div class="col-sm-12 col-md-6">
@@ -51,16 +51,28 @@ layout: default
         </div>
     </div>
 
-    <div id="organization" class="container organization">
-    <h1>Organization</h1>
-    <div>
-        <dl>
-        {% for row in site.data.organization.profile %}
-        <dt>{{ row.key }}</dt>
-        <dd>{{ row.value }}</dd>
-        {% endfor %}
-        </dl>
-    </div>
+    <div class="topics">
+        <div class="container">
+            <h1>TOPICS</h1>
+            <p>Gitobiのコーポレートニュース、メディア掲載情報などを発信しています。</p>
+            <div class="card-deck posts">
+                {% for post in site.posts %}
+                    <a href="{{ post.url }}" class="card posts-card">
+                        <img src="{{ post.image }}" class="card-img-top eyecatch-img" alt="Post image" />
+                        <div class="card-body">
+                            <h5 class="card-title">{{ post.title }}</h5>
+                            <p class="card-text">{{ post.description }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text">
+                                <span class="pull-left">{{ post.categories }}</span>
+                                <span class="pull-right">{{ post.date | date: "%Y年%-m月%-d日" }}</span>
+                            </p>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 
     <div id="contact" class="container contact">
