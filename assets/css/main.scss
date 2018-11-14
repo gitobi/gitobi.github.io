@@ -202,19 +202,38 @@ header {
 }
 
 footer {
-  padding-top: 25px;
-  padding-bottom:25px;
-  text-align: center;
-  ul {
+  border-top: solid 1px #cccccc;
+  padding-top: 50px;
+
+  .logo {
+    margin-bottom: 30px;
+
+    .img {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      height: 40px;
+      letter-spacing: normal;
+    }
+  }
+  .footer-menu{
     padding-left: 0px;
+    list-style-type: none;
+
     li {
-      display: inline;
+      margin: 5px 0;
       a {
-        font-size: 30px;
+        text-decoration: none;
+        font-size: 16px;
       }
       a:link, a:hover, a:visited, a:active {
         color: $color-font;
       }
     }
+  }
+  .copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: .8em;
   }
 }
