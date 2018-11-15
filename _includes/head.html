@@ -5,11 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>
-        {% if page.layout == 'home' %}
-            {{ site.title | escape }}
-        {% else %}
-            {{ page.title | escape }} | Gitobi
-        {% endif %}
+        {% if page.layout != 'home' %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}
     </title>
 
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
