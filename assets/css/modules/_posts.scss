@@ -1,0 +1,20 @@
+.posts {
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  a:hover, a:visited {
+    color: $color-font;
+  }
+  a {
+    text-decoration: none;
+    color: $color-font;
+  }
+
+  .posts-card {
+    .eyecatch-img {
+      height: 240px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

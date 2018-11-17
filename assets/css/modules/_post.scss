@@ -1,0 +1,36 @@
+.post {
+  padding-top: 50px;
+
+  .post-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    h1 {
+      font-size: 1.6em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .post-detail {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    p {
+      font-size: .8em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .eyecatch {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

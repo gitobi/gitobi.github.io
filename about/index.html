@@ -1,0 +1,18 @@
+---
+layout: default
+title: ABOUT
+permalink: /about/
+---
+
+<div class="container about">
+    <h1>INFORMATION</h1>
+    <p>会社概要</p>
+    <div>
+        <dl>
+            {% for row in site.data.organization.profile %}
+                <dt>{{ row.key }}</dt>
+                <dd>{{ row.value }}</dd>
+            {% endfor %}
+        </dl>
+    </div>
+</div>

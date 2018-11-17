@@ -1,0 +1,83 @@
+.top {
+  .eyecatch {
+    .eyecatch-img {
+      height: 650px;
+      width: 100%;
+      object-fit: cover;
+      object-position: 85% 20%;
+    }
+    .eyecatch-phrase {
+      position: absolute;
+      top: 450px;
+      left: 20px;
+      font-size: 24px;
+      line-height: 24px;
+      background-color: $color-background-primary;
+      opacity: .75;
+      padding: 10px;
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .about {
+    margin: 50px 0 60px 0;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .eyecatch-img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .about-description {
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  .service {
+    margin: 50px 0 60px 0;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .eyecatch-img {
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .service-description {
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  .topics {
+    margin: 50px 0 60px 0;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  .contact {
+    .contact-col {
+      margin-bottom: 30px;
+    }
+    .contact-box {
+      height: 100%;
+      padding: 30px;
+
+      h1 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
