@@ -1,0 +1,29 @@
+---
+layout: default
+title: TOPICS
+permalink: /topics/
+---
+
+<div class="topics">
+    <div class="container">
+        <h1>TOPICS</h1>
+        <p>Gitobiのコーポレートニュース、メディア掲載情報などを発信しています。</p>
+        <div class="card-deck posts">
+            {% for post in site.posts limit: 12 %}
+                <a href="{{ post.url }}" class="card posts-card">
+                    <img src="{{ post.image }}" class="card-img-top eyecatch-img" alt="Post image" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.description }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">
+                            <span class="pull-left">{{ post.categories }}</span>
+                            <span class="pull-right">{{ post.date | date: "%Y年%-m月%-d日" }}</span>
+                        </p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
