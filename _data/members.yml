@@ -1,13 +1,28 @@
 - full_name: Rui Onodera
-  title: CEO
+  image: /assets/images/pages/about/rui_onodera.jpg
+  about: 代表者。CEO。梨が好きなエンジニア。
   social:
     github: deraru
+    twitter: deraru
 - full_name: Ryo Shibayama
-  title: COO
+  image: /assets/images/pages/about/member.jpg
+  about: COO。子供が好きなエンジニア。
   social:
     github: serima
+    twitter: serima
 - full_name: Hidehiko Miyazaki
+  image: /assets/images/pages/about/member.jpg
+  about: 広報活動に勤しむエンジニア。
 - full_name: Masayo Ohba
+  image: /assets/images/pages/about/member.jpg
+  about: フルーツ栽培に勤しむ栽培管理者。
 - full_name: Takuro Onoda
+  image: /assets/images/pages/about/takuro_onoda.jpg
+  about: ゲームが好きなリードエンジニア。
   social:
     github: TakuroOnoda
+- full_name: Katsuhito Matsuhima
+  image: /assets/images/pages/about/member.jpg
+  about: 屋外が好きなエンジニア。
+  social:
+    github: matwu

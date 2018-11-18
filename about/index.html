@@ -4,15 +4,158 @@ title: ABOUT
 permalink: /about/
 ---
 
-<div class="container about">
-    <h1>INFORMATION</h1>
-    <p>会社概要</p>
-    <div>
-        <dl>
-            {% for row in site.data.organization.profile %}
-                <dt>{{ row.key }}</dt>
-                <dd>{{ row.value }}</dd>
-            {% endfor %}
-        </dl>
+<div class="about">
+    <div class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="text-center">ABOUT</h1>
+                    <p>Gitobiが目指していることや、これまでの歩みのほか、社員、会社概要などを自己紹介します。</p>
+                </div>
+                <div class="col-md-8">
+                    <img class="eyecatch-img rounded" src="/assets/images/pages/top/about_eyecatch.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="vision">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="text-center">VISION</h1>
+                    <p class="text-center">目指していること</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <h2>日本のフルーツが、世界中で愛される未来</h2>
+                        <p>日本のフルーツは、育成に時間がかかること、四季の影響で年に一度しか収穫できないことから、年中収穫可能な南国のフルーツに比べて生産量が限られてしまいます。さらに、その生産したフルーツはほぼ国内で消費されてしまい、世界の人々が日本のフルーツを手に取る機会は多くありません。</p>
+                        <p>そこでGitobiは、より早く、より多くの実を収穫可能にする「根圏制御栽培」という果樹栽培の農法に注目しました。</p>
+                        <p>Gitobiは、この農法をITと組み合わせて利用することで、日本のフルーツ栽培のコストを下げながら、一年中果実を収穫できる「フルーツ工場」の開設を目指します。そして、日本のフルーツが、世界中の人に親しんでもらえる未来を創ります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mission">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="text-center">MISSION</h1>
+                    <p class="text-center">何をするのか</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <h2>フルーツ栽培をもっと身近にする</h2>
+                        <p>梨や桃をはじめとする日本の美味しいフルーツ。しかし、その栽培には、たくさんの時間と労力がかかります。</p>
+                        <p>日本のフルーツは、実が収穫できるようになるまでに数年の歳月が必要なうえ、四季の影響で年に一度しか収穫できません。さらに、病気にかかったり、ほかの生き物からの食害を受けやすい作物であるため、日当たりや気温、降雨量など、環境に応じてこまめな手入れをしなければならないのです。</p>
+                        <p>Gitobiは、自然環境や職人の感覚をITの力で計測し、データとして活用可能にすることで、より美味しいフルーツを、より簡単に栽培できるようにします。そして、誰もが手軽にフルーツ栽培を始められる・続けられるようにします。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="text-center">STORY</h1>
+                    <p class="text-center">これまでの歩み</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <h2>「ITの力で、日本の農業を元気付けたい」</h2>
+                        <img class="eyecatch-img rounded" src="/assets/images/pages/about/story_eyecatch.jpg" />
+                        <p>エンジニアリング企業であるGitobiが、事業の軸足を「農業」に置くことに決めたのは、2016年のこと。</p>
+                        <p>きっかけは、創業者の小野寺が何気なく手にした一冊の本でした。そこに書かれていたのは、日本の農業の構造と、その継続発展の妨げとなる課題の数々。これまでさまざまなITサービスを生み出してきたGitobiなら、それらの課題を解決できるかもしれない——。可能性を探るため、農業の勉強を始めた小野寺は、そこで、日本のフルーツ栽培の難しさに直面します。</p>
+                        <p>「自分は幼い頃から、フルーツ、なかでも日本のフルーツである“梨”に親しんできた。世の中の課題を解決するエンジニアリングの力を、どうせなら自分の好きな物事のために使いたい」</p>
+                        <p>こうして、大学や農業試験場の力を借りながら研究開発を行い、誕生したのが、Gitobiの「フルーツ工場」事業。日本のフルーツが、より美味しく簡単に栽培できる未来、そしてその先に、世界中の人に愛される未来を思い描いて、このサービスは誕生したのです。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 service-col">
+                    <div class="border rounded service-box">
+                        <h1 class="text-center">SERVICE</h1>
+                        <p>日本のフルーツ栽培のコストを下げ、効率化を支援する「フルーツ工場」事業のご紹介。日当たりや水分量などの環境を計測・制御する手のひらサイズのIoTデバイスや、それらのデバイスを管理・運用するオンラインシステムの開発・提供を行っています。</p>
+                        <a href="#" class="btn btn-outline-dark btn-block" role="button">Serviceを見る→</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="member">
+        <div class="container">
+            <div class="row header">
+                <div class="col-md-4">
+                    <h1 class="text-center">MEMBER</h1>
+                    <p class="text-center">社員紹介</p>
+                </div>
+            </div>
+            <div class="row">
+                {% for row in site.data.members %}
+                    <div class="col-md-6 person">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 text-center">
+                                <img src="{{ row.image }}" class="image rounded-circle"/>
+                            </div>
+                            <div class="col-md-8">
+                                <h4>{{ row.full_name }}</h4>
+                                {% if row.social.github %}
+                                    <a href="https://github.com/{{ row.social.github }}" target="blank" rel="nofollow"><i class="fab fa-github"></i></a>
+                                {% endif %}
+                                {% if row.social.twitter %}
+                                    <a href="https://twitter.com/{{ row.social.twitter }}" target="blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
+                                {% endif %}
+                                <p>{{ row.about }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="text-center">INFO</h1>
+                    <p class="text-center">会社概要</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <dl>
+                            {% for row in site.data.organization.profile %}
+                                <dt>{{ row.key }}</dt>
+                                <dd>{{ row.value }}</dd>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 service-col">
+                    <h1 class="text-center">CONTACT</h1>
+                    <p>サービスについてや、協業のご相談、農地情報のご提供、採用についてなど、気になることがあれば、お気軽にお問い合わせください。理念に共感してくださる方からの応援もお待ちしております。</p>
+                </div>
+                <div class="col-md-6 offset-md-3 service-col">
+                    <a href="http://goo.gl/forms/UwYGr6VurI" class="btn btn-outline-dark btn-block" role="button" target="blank" rel="nofollow">問い合わせフォームへ</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

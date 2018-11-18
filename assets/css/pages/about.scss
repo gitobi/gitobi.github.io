@@ -1,3 +1,107 @@
 .about {
-  padding-top: 50px;
+  .intro {
+    margin: 100px 0 60px 0;
+
+    .eyecatch-img {
+      margin: 20px 0;
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .vision {
+    margin: 50px 0 60px 0;
+
+    .content {
+      margin: 20px 0;
+
+      h2 {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .mission {
+    margin: 50px 0 60px 0;
+
+    .content {
+      margin: 20px 0;
+
+      h2 {
+        margin: 40px 0;
+      }
+    }
+  }
+
+  .story {
+    margin: 50px 0 60px 0;
+
+    .content {
+      margin: 20px 0;
+
+      h2 {
+        margin: 40px 0;
+      }
+
+      .eyecatch-img {
+        margin-bottom: 20px;
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 85% 20%;
+      }
+    }
+  }
+
+  .service {
+    .service-col {
+      margin-bottom: 30px;
+    }
+    .service-box {
+      height: 100%;
+      padding: 30px;
+
+      h1 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .member {
+    margin: 50px 0 60px 0;
+
+    .header {
+      margin-bottom: 30px;
+    }
+
+    .person {
+      margin-bottom: 20px;
+
+      .image {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+      }
+
+      a:hover, .active {
+        color: $color-font;
+      }
+      a {
+        color: $color-font;
+      }
+    }
+  }
+
+  .info {
+    margin: 50px 0 60px 0;
+
+    .content {
+      margin: 20px 0;
+    }
+  }
+
+  .contact {
+    margin: 50px 0 60px 0;
+  }
 }
