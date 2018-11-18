@@ -1,0 +1,52 @@
+.services {
+  .intro {
+    margin: 100px 0 60px 0;
+
+    .eyecatch-img {
+      margin: 20px 0;
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .gitobi-cosmo-devices {
+    margin: 50px 0 60px 0;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .device {
+      margin: 30px 0;
+
+      .eyecatch-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      h2 {
+        margin: 20px 0;
+      }
+    }
+  }
+
+  .karakuri-farm {
+    margin: 50px 0 60px 0;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .eyecatch-img {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contact {
+    margin: 50px 0 60px 0;
+  }
+}
