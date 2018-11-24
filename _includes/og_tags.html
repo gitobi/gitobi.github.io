@@ -1,19 +1,19 @@
 {% if page.layout == 'home' %}
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ site.title | escape }}" />
-    <meta property="og:image" content="/assets/images/logo_and_font_vertical.png" />
+    <meta property="og:image" content="{{ '/assets/images/logo_and_font_vertical.png' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
 {% elsif page.layout == 'post'  %}
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}" />
-    <meta property="og:image" content="{{ page.image }}" />
+    <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:description" content="{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
 {% else %}
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}" />
-    <meta property="og:image" content="/assets/images/logo_and_font_vertical.png" />
+    <meta property="og:image" content="{{ '/assets/images/logo_and_font_vertical.png' | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
 
 {% endif %}
