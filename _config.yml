@@ -13,6 +13,9 @@ permalink: /:categories/:year/:month/:day/:title/
 sass:
   sass_dir: assets/css
 
+plugins:
+  - jekyll-feed
+
 exclude:
   - vendor
   - README.md
