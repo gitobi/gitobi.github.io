@@ -1,0 +1,15 @@
+{% if page.layout == 'home' %}
+    <title>{{ site.title | escape }}</title>
+    <meta name="description" content="{{ site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+{% elsif page.layout == 'post'  %}
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+{% else %}
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+{% endif %}
+
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
