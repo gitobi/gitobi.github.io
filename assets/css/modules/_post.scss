@@ -33,4 +33,28 @@
       object-fit: cover;
     }
   }
+
+  .post-body {
+    blockquote {
+      position: relative;
+      margin: 30px 0;
+      padding: 10px 15px 10px 30px;
+      box-sizing: border-box;
+      font-style: italic;
+      background: $color-background-blockquote;
+      color: $color-blockquote-font;
+      border-left: 4px solid $color-accent-2;
+
+      p {
+        padding: 0;
+        margin: 7px 0;
+        line-height: 1.7;
+      }
+
+      cite {
+        display: block;
+        font-size: 0.9em;
+      }
+    }
+  }
 }
