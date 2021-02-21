@@ -12,8 +12,7 @@ Our Corporate website project. http://www.gitobi.com
 
 ## Requirements
 
-- Ruby 2.5.1
-- Bundler 1.17.3
+- Ruby 3.0.0
 
 ## Set up
 
