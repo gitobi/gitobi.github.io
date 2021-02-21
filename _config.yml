@@ -1,6 +1,6 @@
-title: フルーツ工場のGitobi
+title: 果樹の根域制限栽培とスマート農業のGitobi
 description: > # this means to ignore newlines until "baseurl:"
-  AIとIoTが支援するフルーツ工場事業を行っています。環境を計測し、環境を制御するIoTデバイスである「Gitobi Cosmo Devices」の開発と販売、農業用AI栽培システムである「からくりファーム」の提供をGitobi合同会社は行っています。
+  根域制限栽培とITを活用した果樹のスマート農業、フルーツ工場事業を行っています。フルーツ工場で収穫したフルーツは Maiko ブランドで展開。また果樹の根域制限栽培に必要な資材やスマートかん水装置、根域制限栽培システムの販売を行なっています。
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gitobi.com" # the base hostname & protocol for your site
